@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Allow reading user selected files -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    
+    <!-- Allow access to temporary folders -->
+    <key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
+    <array>
+        <string>/tmp/</string>
+        <string>/var/folders/</string>
+    </array>
+    
+    <!-- Allow executing external commands (Ghostscript) -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+</dict>
+</plist> 
